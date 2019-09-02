@@ -3,13 +3,11 @@
 - 它能帮助coder快速构建后台项目
 - 诠释了node是世界上最好的语言
 
----
 目录结构
 - routers |  路由 
 - pool |     数据库连接
 - controllers | 控制操作层
 - static | 静态文件
----
 
 > 路由
 ```
