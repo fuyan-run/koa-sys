@@ -1,0 +1,8 @@
+.content_koa {
+    border: 1px solid green;
+    padding: 10px 20px; margin: 10px;
+}
+.content_koa pre {
+    color: red;
+    font-size: 20px;
+}

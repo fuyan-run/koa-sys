@@ -1,2 +1,2 @@
-# koa_node
-基于koa2的纯后台项目
+# koa-project
+`基于koa2的后台搭建`
