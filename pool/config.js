@@ -3,11 +3,11 @@
 const config = {
     // 数据库配置
     database: {
-        DATABASE: '',
-        USERNAME: '',
-        HOST: '',
-        PASSWORD: '',
-        PORT: '' 
+        DATABASE: 'koa',
+        USERNAME: 'noob',
+        HOST: '140.143.218.52',
+        PASSWORD: 'k8#lzCPf@Xsx+&PgK',
+        PORT: '10187',
     }
 }
 
