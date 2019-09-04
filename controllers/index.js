@@ -11,11 +11,11 @@ class Index {
             res = await Query(_sql)
             console.log(res)
             ctx.response.status = 200;
-            ctx.body = {
+            ctx.body = JSON.stringify({
                 code: 200,
                 msg: '查询用户成功',
                 data: res
-            }
+            }, null, '\t')
         } catch (err) {
             ctx.response.status = 200;
             ctx.body = {
