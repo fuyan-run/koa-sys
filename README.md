@@ -6,11 +6,11 @@
 #### :blush:您只要三步走
 
 ```
-1. pool\config.js         // 里面输入数据库信息
+1. /pool/config.js         // 里面输入数据库信息
 
-2. controllers\index.js   // 里面操作数据
+2. /controllers/index.js   // 里面操作数据
 
-3. routers\index.js       // 里面分配路由
+3. /routers/index.js       // 里面分配路由
 ```
 
 这样你就可以愉快的写后台项目了
