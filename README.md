@@ -41,5 +41,5 @@ npm install
 npm run dev
 ```
 
-### 觉得不错给个star呗！:see_no_evil:
+:see_no_evil::see_no_evil::see_no_evil::see_no_evil::see_no_evil:
 
