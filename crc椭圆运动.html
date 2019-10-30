@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        .ab{
+            width:1px;
+            height:1px;
+            background: #000;
+            position: absolute;
+        }
+        .move{
+            position: absolute;
+            width:40px;
+            height:40px;
+            background: #000;
+        }
+    </style>
+</head>
+<body>
+    <div class="move"></div>
+</body>
+<script>
+    (function(){
+        var x = 300, y = 300, // 定位
+			a = 80, b = 40, // 长轴或者短轴 
+			du = 360, // 运动范围角度
+			arr = [], // 计算获得椭圆的数组坐标
+			speed = 3,
+			z = 0,
+			timer;
+        var go = document.querySelector(".move");
+        for (let i = 0; i < du; i++) {
+            let divs = document.createElement("div"),
+                hudu = (Math.PI/180) * i,
+                x1 = a * Math.sin(hudu) + x,
+                y1 = y - (b * Math.cos(hudu));
+			arr[i] = [];
+			arr[i][0] = x1 - 2;
+			arr[i][1] = y1 - 2;
+            divs.className = "ab";
+            divs.style.cssText=`left: ${x1}px;top: ${y1}px;`
+            document.body.appendChild(divs);
+        };
+        clearInterval(timer);
+        timer=setInterval(function(){
+            if(z >= du) z = 0;
+            go.style.cssText = `left: ${arr[z][0]}px;top: ${arr[z][1]}px;`
+            z += speed;
+        }, 30)
+    })()
+</script>
+</html>
